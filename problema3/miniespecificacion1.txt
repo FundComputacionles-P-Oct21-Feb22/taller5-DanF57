@@ -1,0 +1,28 @@
+/*
+Generar una solución que lea la temperatura en grados centı́grados (◦C) 
+y la convierta a grados Farenheit (◦F) y a grados Kelvin (◦K), 
+siempre y cuando la temperatura dada en grados centı́grados sea positiva y menor 
+o igual que cien.
+*/
+
+1.  Inicio
+
+2.  gradosc, d[0,n]
+3.  gradosf, d[0,n]
+4.  gradosk, d[0,100]
+
+5.  << "Ingrese Temperatura en grados centígrados:"
+6.  >> gradosc
+
+7.   Si gradosc >= 0 && gradosc <= 100 entonces
+8. 	gradosf <-- ((9/5)*(gradosc)) + 32
+9. 	gradosk <-- gradosc + 273.15
+
+10.  Fin si
+
+11. Escribir "La temperatura en grados ◦F es: " + gradosf
+12. Escribir "La temperatura en grados ◦K es: " + gradosk
+
+13. Fin
+
+

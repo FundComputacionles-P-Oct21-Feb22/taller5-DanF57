@@ -1,0 +1,42 @@
+Solución que imprima el costo de un pedido de un artículo del cual se tiene la descripción, 
+la cantidad que se requiere y el precio unitario. 
+Si la cantidad pedida es exactamente 10 unidades o 20 unidades, 
+se hace un descuento de 15%; caso contrario se descuenta el 10%
+
+1.Inicio
+
+2.  cantidad, d[0,n]
+3.  preciouni, d[0,n]
+4.  valortotal, d[0,n]
+5.  descuento1, d[0,n]
+6.  descuento2, d[0,n]
+6.  porcentaje1, d[0,n] <-- 15
+.   porcentaje2, d[0,n] <-- 10
+7.  nombrearticulo, x(50)[{a-z}{BS}{A-Z}]
+
+8.  << "Ingrese Nombre del Artículo"
+9.  >> nombrearticulo
+
+10. << "Ingrese la cantidad"
+11. >> cantidad
+
+12. << "Ingrese el precio unitario"  
+13. >> preciouni  
+
+14. valorTotal <-- cantidad * preciouni
+
+15.   Si cantidad == 10 or cantidad == 20 entonces
+16. 	descuento1 <-- (porcentaje1 * valorTotal)/100 //15%
+17. 	valorTotal <-- valorTotal - descuento1
+
+18.   Caso contrario
+19. 	descuento2 <-- (porcentaje2 * valorTotal)/100 //10%
+20. 	valort Total <-- valorTotal - descuento2
+
+18. Fin si
+
+19. Escribir "El costo total de " + nombrearticulo + "es" + valorTotal
+
+20. Fin
+
+
